@@ -7,7 +7,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - name : issue creation
+      - name: issue creation
         run: |
           curl -L \
           -X POST \
