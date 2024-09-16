@@ -12,7 +12,7 @@ jobs:
       sha_short: ${{ steps.short_sha.outputs.sha_short }}
     steps:
       - name: Shorten SHA
-        id: shorten_sha
+        id: short_sha
         run: echo "sha_short=${GITHUB_SHA::7}" >> $GITHUB_OUTPUT
       - name: Issue creation
         run: |
