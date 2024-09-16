@@ -16,6 +16,8 @@ jobs:
             node-version: ${{ env.NODE_VERSION }}
         - name: check node version
           run: node -v
+        - name: print node version
+          run:  echo 'NODE_VERSION=14' >> $GITHUB_OUTPUT
         - name: run test
           shell: bash
           run: |
