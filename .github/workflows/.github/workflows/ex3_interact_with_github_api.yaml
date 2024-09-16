@@ -1,6 +1,6 @@
 name: interact with Github API
 on: 
-  push_request:
+  push:
 
 jobs:
   create-issue:
