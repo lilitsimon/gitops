@@ -12,9 +12,9 @@ jobs:
         uses:  actions/setup-node@v4
         with:
           node-version:  20
-      - name: Install npm
+      - name: Install dependencies
         run: npm install -g bats
-      - name: Test npm
+      - name: Run Tests
         run: npm test
-      - name: run bats
+      - name: Run bats
         run: bats -v
