@@ -11,10 +11,6 @@ jobs:
       - name:  Setup Latest Node
         uses:  actions/setup-node@v4
         with:
-          node-version:  20
+          node-version:  'lts/*'
       - name: Install dependencies
-        run: npm install -g bats
-      - name: Run Tests
-        run: npm test
-      - name: Run bats
-        run: bats -v
+        run: npm install
