@@ -5,8 +5,6 @@ on:
 
 jobs:
   create-issue:
-    permissions:
-      issues: write
     runs-on: ubuntu-latest
     outputs:
       sha_short: ${{ steps.short_sha.outputs.sha_short }}
