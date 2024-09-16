@@ -1,0 +1,8 @@
+name: Run With Reusable Workflow
+on: 
+  push:
+
+jobs:
+  run-tests-by-calling-workflow:
+    uses: ./github/workflows/ex4.yaml
+  
