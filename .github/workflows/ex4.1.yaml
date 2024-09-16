@@ -5,5 +5,5 @@ on:
 jobs:
   run-tests-by-calling-workflow:
     uses: ./.github/workflows/ex4.yaml
-      with:
-          node-version: 20
+    with:
+      node-version: 20
